@@ -1,0 +1,493 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+.navbar {
+    position: absolute;
+    top: 1px;
+    right: 20px
+}
+
+.nav {
+    background-color:rgb(175, 12, 12);
+    height: 70px;
+    width: 100%;
+    position: absolute;
+}
+
+.nav li {
+    font-size: 20px;
+    display: inline-block;
+    margin: 11px;
+    text-align: center;
+    padding: 10px;
+}
+
+.nav li a {
+    color: yellow;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.nav li a:hover {
+    color: white;
+    padding: auto;
+    transition: 0.8s;
+    background-color: none;
+    border-radius: none;
+}
+
+.nav .active {
+    color: white;
+}
+
+.nav .left {
+    position: fixed;
+    display: flex;
+    position: absolute;
+    padding: 9px;
+}
+.dropdown {
+    float: right;
+    overflow: hidden;
+  }
+  .dropdown .fa
+  {
+   position: relative;
+   left: -20px;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+   .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 70px;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .left .ico {
+    height:120px;
+    width: 120px;
+    position: absolute;
+    left: 0;
+    margin-left:130px;
+}
+
+.left .logotxt {
+    font-size: 20px;
+    color: antiquewhite;
+    text-align: center;
+    padding: 10px;
+}
+
+.left .sub {
+    color: white;
+    position: absolute;
+    left: 77px;
+    top: 40px;
+    font-size: 11px;
+}
+.ico
+{
+  position: absolute;
+  height: 120px;
+  width: 120px;
+  margin: -25px 0px 0px 5px;
+}
+
+
+@media screen and (max-width: 1080px) {
+    body {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+
+    .nav li {
+        position: relative;
+    }
+
+    .nav li:hover {
+        color: white;
+    }
+
+    .nav li a {
+        font-size: 15px;
+        background-color: none;
+        color: orange;
+    }
+
+    .cpyrt {
+        font-size: 15px;
+        height: 5vh;
+        vertical-align: center;
+        top: 200px;
+    }
+
+    .cpyrt {
+        width: 100%;
+        color: orangered;
+        font-family: sans-serif;
+        text-align: center;
+        position: relative;
+        top: 40%;
+        height: 30px;
+        font-family: 'PT Serif Caption', serif;
+
+    }
+
+    .ftrico {
+        height: 20vh;
+        position: relative;
+        top: -30px;
+        margin: 10px;
+        display: none;
+    }
+}
+
+@media screen and (max-width: 760px) {
+
+    *{
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+    .nav li:hover {
+        border: none;
+    }
+
+
+    .nav {
+        position: fixed;
+        width:100%;
+        z-index: 10;
+    }
+
+    .nav li {
+        position: relative;
+        top: 50px;
+        display: block;
+        margin: 20px 20px 10px 20px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .nav li a {
+        font-size: 20px;
+        background-color: transparent;
+        color: black;
+    }
+
+    .nav li a:hover {
+        color: orangered;
+        background: none;
+        border: 2px solid red;
+        padding: 10px;
+
+    }
+
+    .nav .active {
+        color: orangered;
+        border: 2px solid red;
+        padding: 10px;
+    }
+
+    .navbar {
+        background-color: white;
+        height: 100%;
+        width: 0%;
+        align-content: center;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 1;
+        display:none;
+        overflow: hidden;
+    }
+
+
+      li .fa
+      {
+       position: relative;
+       left: -20px;
+      }
+      
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+      
+      .dropdown-content a:hover {
+        background-color: #ddd;
+      }
+      
+      li:hover .dropdown-content {
+        display: block;
+      }
+
+
+
+
+
+    #closeico {
+        position: absolute;
+        top: 36px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .line1,
+    .line2 {
+        background-color: black;
+        height: 2px;
+        width: 30px;
+    }
+
+    .line3,
+    .line4,
+    .line5 {
+        background-color: white;
+        height: 3px;
+        width: 26px;
+        margin: 5px;
+        cursor: pointer;
+    }
+
+    #menu {
+        cursor: pointer;
+    }
+
+    .line1 {
+        transform: rotateZ(45deg);
+        animation: line1 0.5s;
+    }
+
+    .line2 {
+        transform: rotateZ(-45deg);
+        animation: line2 0.5s;
+    }
+
+    @keyframes line1 {
+        from {
+            transform: rotateZ(0deg);
+        }
+
+        to {
+            transform: rotateZ(45deg);
+        }
+    }
+
+    @keyframes line2 {
+        from {
+            transform: rotateZ(0deg);
+        }
+
+        to {
+            transform: rotateZ(-45deg);
+        }
+    }
+
+    .nav .left .navbtn {
+        padding: 10px;
+        background: none;
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        left: 15px;
+    }
+    
+ 
+main .lnd
+{
+  background-color: black;
+  width: 100%;
+  position: relative;
+  height: 100vh;
+}
+.lnd-txt 
+{
+  position: absolute;
+ width: 100%;
+ margin: -120px 0px 0px 0px; 
+}
+
+.lnd-tool
+{
+  display: flex;
+  position: absolute;
+  padding: 5px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: auto;
+  left: 50px;
+  top: 256px;
+  
+}
+.lnd-tool #box1,#box2,#box3,#box4
+{
+  color: white;
+  margin: 10px;
+  height: 200px;
+  width: 200px;
+  border-radius: 10px;
+  border: 2px solid red;
+  transition: 0.8s;
+  
+}
+  .lnd-tool #box1,#box2,#box3,#box4
+  {
+    height: 130px;
+  width: 130px;
+  }
+    .active {
+        color: white;
+        background-color: orangered;
+    }
+
+    .cpyrt {
+        font-size: 12px;
+        height: 5vh;
+        vertical-align: center;
+        top: 75px;
+        position: absolute;
+    }
+
+    @keyframes mynav {
+        from {
+            width: 0%;
+        }
+
+        to {
+            width: 70%;
+        }
+    }
+
+    @keyframes closemenu {
+        from {
+            width: 70%;
+        }
+
+        to {
+            width: 0%;
+        }
+    }
+footer
+    {
+    top:auto;
+    width: 100%;
+    margin: auto;
+    }
+footer .socioico
+{
+    display: flex;
+    position: absolute;
+    margin: 20px 0px 0px 120px;
+
+}
+footer .socioico i
+{
+    color: white;
+    font-size: 23px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+
+}
+
+@media screen and (max-width: 360px) {
+
+    .cont {
+        width: auto;
+        font-size: 13px;
+        margin: 0px 7px 0px 15px;
+    }
+    .cpyrt {
+        background-color: transparent;
+        position: relative;
+        top: 20%;
+    }
+    .lnd-tool #box1,#box2,#box3,#box4
+  {
+    height: 100px;
+  width: 100px;
+  }
+    footer
+    {
+     top:auto;
+    }
+    footer .cpyrt
+    {
+        top:50px;
+    }
+    footer .socioico
+    {
+        display: flex;
+        position: absolute;
+        margin: -10px 0px 0px 90px;
+    
+    }
+    footer .socioico i
+    {
+        color: white;
+        font-size: 23px;
+        cursor: pointer;
+        margin: 5px;
+    }
+}

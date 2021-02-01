@@ -1,0 +1,153 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-color:;
+}
+.temp-gallery
+{
+    width: 100%;
+    margin-top: 20%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index:;
+}
+.temp-gallery li
+{
+    list-style: none;
+    
+}
+.temp-gallery li:hover
+{
+    transform: scale(1.05);
+    transition: 0.5s ease-in;
+    
+}
+
+.nav
+{
+    margin-top:-20%;
+}
+h1{
+    margin: 0 0 10px;
+    padding: 0;
+    font-size: 24px;
+}
+.search-bar
+{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 500px;
+}
+input
+{
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    
+}
+input[type="text"]
+{
+    background: #fff;
+    width: 340px;
+    height: 50px;
+    border: 2px solid red;
+    padding: 0 25px;
+    left: -5px;
+    border-radius: 25px 0 0 25px;
+    outline: none;
+}
+input[type="submit"]
+{
+    position: relative;
+    border-radius: 0 25px 25px 0 ;
+    width: 150px;
+    height: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: crimson;
+}
+input[type="submit"]:hover
+{
+    background: #ffc107; 
+}
+
+.btn
+        {
+            padding: 10px;
+            width: 90px;
+            outline: none;
+            position: relative;
+            margin: 20px;
+            top:0px;
+            
+        }
+@media screen and (max-width:760px)
+{
+    .temp-gallery
+{
+    width: 100%;
+    margin-top: 40%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index:;
+}
+
+.nav
+{
+    width: 100%;
+    margin-top:-30%;
+}
+h1{
+    margin: 0 0 10px;
+    padding: 0;
+    font-size: 15px;
+}
+.search-bar
+{
+    position: absolute;
+    top: 16%;
+    left: 70%;
+    transform: translate(-50%,-50%);
+    width: 500px;
+}
+input[type="text"]
+{
+    background: #fff;
+    width: 240px;
+    height: 40px;
+    border: 2px solid red;
+    padding: 0 25px;
+    left: -5px;
+    border-radius: 25px 0 0 25px;
+    outline: none;
+}
+input[type="submit"]
+{
+    position: relative;
+    border-radius: 0 25px 25px 0 ;
+    width: 80px;
+    height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: crimson;
+}
+}

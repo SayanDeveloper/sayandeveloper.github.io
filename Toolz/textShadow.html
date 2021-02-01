@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/classic.min.css"/>
+    <link rel="stylesheet" href="textShadow.css">
+    <title>Document</title>
+    
+</head>
+<body id="bdy" onload="loading()">
+    
+    <header>
+        <div class="nav">
+            <div class="left">
+                <img class="ico" src="img/icon3.png">
+                <div class="logotxt"></div>
+                <div class="navbtn" onclick="openmenu()" id="menu">
+                    <div class="line3"></div>
+                    <div class="line4"></div>
+                    <div class="line5"></div>
+                </div>
+            </div>
+
+            <div class="navbar" id="nav-bar">
+                <li><a class="active" href="index.html" data-after="Home">Home</a></li>
+                <div class="dropdown">
+                <li><a href="javascript:void(0)" >Our Tools</a></li>
+                      <i class="fa fa-caret-down"></i>
+                    <div class="dropdown-content" id="dropped">
+                        <a href="colorPicker.html">Color Picker</a>
+                        <a href="shadow.html">Box Shadow generator</a>
+                        <a href="textShadow.html">Text Shadow generator</a>
+                        <a href="temp.html">Templates</a>
+                    </div>
+                  </div>        
+                <div id="closeico" onclick="closemenu()">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="container">
+        <div class="controls">
+            <div class="title">CONTROLS</div>
+            <div class="f">
+                <p>X axis: <input type="range" min="-30" max="30" name="" id="x-val" value="0"> <span id="x-move">0</span>px</p>
+                <p>Y axis: <input type="range" min="-30" max="30" name="" id="y-val" value="0"> <span id="y-move">0</span>px</p>
+                <p>Blur: <input type="range" min="0" max="30" name="" id="b-val" value="0"> <span id="blur">0</span>px</p>
+                <p>
+                    <div class="flex">
+                        <div>Shadow Color: </div>
+                        <div class="pickr-container">
+                            <div class="color-picker" id="color"></div>
+                        </div>
+                    </div>
+                </p>
+            </div>
+            <div id="code">
+                filter: drop-shadow(<span id="chX">0</span>px <span id="chY">0</span>px <span id="chB">0</span>px <span id="colorT">black</span>);
+            </div>
+        </div>
+
+        <div class="preview">
+            <div class="title">PREVIEW</div>
+            <div id="previewBox">
+                Text shadow
+            </div>
+        </div>
+
+        
+
+    </div>
+    <script src="https://kit.fontawesome.com/a35fb36c6a.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js"></script>
+    <script src="script.js"></script>
+    <script src="textShadow.js">
+       
+      
+    </script>
+
+</body>
+</html>

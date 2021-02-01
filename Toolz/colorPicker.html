@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/classic.min.css"/>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="colorPicker.css">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <div class="left">
+                <a href="index.html"><img class="ico" src="img/icon3.png"></a>
+                <div class="logotxt"></div>
+                <div class="navbtn" onclick="openmenu()" id="menu">
+                    <div class="line3"></div>
+                    <div class="line4"></div>
+                    <div class="line5"></div>
+                </div>
+            </div>
+
+            <div class="navbar" id="nav-bar">
+                <li><a class="active" href="index.html" data-after="Home">Home</a></li>
+                <div class="dropdown">
+                <li><a href="javascript:void(0)" id="stop">Our Tools</a></li>
+                      <i class="fa fa-caret-down"></i>
+                    <div class="dropdown-content" id="dropped">
+                      <a href="colorPicker.html">Color Picker</a>
+                      <a href="shadow.html">Box Shadow generator</a>
+                      <a href="textShadow.html">Text Shadow generator</a>
+                      <a href="temp.html">Templates</a>
+                    </div>
+                  </div>        
+                <div id="closeico" onclick="closemenu()">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div>
+        <div id="total">
+        <div class="title">Color Picker</div>
+        <div class="glassEffect">
+            <span class="chs">Choose a colour : </span>
+        <div class="center">
+            <div class="pickr-container">
+                <div class="color-picker" id="color"></div>
+            </div>
+
+
+        </div>
+        <div id="box">
+            <div id="rgb"> <u class="textSh"> RGB value  </u> 
+                <span id="rgbaOut">rgba(32, 171, 185, 1)</span>
+            </div>
+            <div id="hex"><u class="textSh"> Hex value </u> <span id="hexVal">#20ABB9</span></div>
+        </div>
+        </div>
+        <div class="right-bar"></div>
+        <div class="left-bar"></div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/a35fb36c6a.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js"></script>
+    
+    <script src="colorPicker.js"></script>
+    
+</body>
+</html>
