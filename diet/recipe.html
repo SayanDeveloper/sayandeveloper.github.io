@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+
+            <div class="first">Your Current Plan</div>
+            <div class="second">Weight Loss #3</div>
+            <div class="ham" onclick="sideNav()"><div class="hamburger"></div></div>
+            <div class="profile-image">
+                <img src="images/black.jpg" alt="face" onclick="showDrop()">
+                <div class="online"></div>
+            </div>
+            <div class="drop-profile" id="restrict" onclick="custom()">
+                <div class="blur"></div>
+                <div class="drop-profile-name">Halil Ibrahim Nuroglu</div>
+                <div class="drop-profile-mob">8989898989</div> 
+                <div class="profile-image">
+                    <img src="images/black.jpg" alt="face" onclick="showDrop()">
+                    <div class="online"></div>
+                </div>
+                <a href="./profile.html"><div class="edit-profile" onclick="custom()">Edit Profile</div></a>
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="icons">
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                <i class="fa fa-bell-o" aria-hidden="true"></i>
+                <a href="#" class="log-out"><i class="fa fa-sign-out" aria-hidden="true"></i></a>
+            </div>
+            <div class="profile">
+                <span>AB+</span>
+                <div class="profile-image">
+                    <img src="images/face.png" alt="face">
+                    <div class="online"></div>
+                </div>
+                <div class="profile-info">
+                    <div class="profile-name">
+                        <b>Halil Ibrahim Nuroglu</b>
+                    </div>
+                    <div class="mob-num">
+                        Mobile No. : 8989898989
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav id="sideNavResponsive">
+        <nav>Your Plan</nav>
+        <span>Weight Loss #3</span>
+        <div class="head">
+            DASHBOARD
+        </div>
+        <ul>
+            <li><a href=""><img src="images/home.png" alt="home"><span>Over View</span></a></li>
+            <li><a href=""><img src="images/board.png" alt="board"><span>Meal Plan</span></a></li>
+            <li><a href=""><img src="images/clock.png" alt="clock"><span>Measurements</span></a></li>
+            <li><a href=""><img src="images/cart.png" alt="cart"><span>Support</span></a></li>
+            <li><a href="./profile.html"><img src="images/board.png" alt="profile"><span>Profile</span></a></li>
+            <li><a href=""><img src="images/ninja.png" alt="vid"><span>Videos</span></a></li>
+            <li><a href=""><img src="images/trophy.png" alt="trophy"><span>Achievements</span></a></li>
+        </ul>
+        <div class="head">
+            DASHBOARD
+        </div>
+        <ul>
+            <li><a href="./recipe.html"><img src="images/board.png" alt="recipe"><span>Recipes</span></a></li>
+            <li><a href=""><img src="images/clock.png" alt="fit"><span>Fitness</span></a></li>
+            <li><a href=""><img src="images/cart.png" alt="cart"><span>Resources</span></a></li>
+            <li><a href=""><img src="images/ninja.png" alt="about"><span>About</span></a></li>
+            <li><a href=""><img src="images/paste.png" alt="support"><span>Support</span></a></li>
+        </ul>
+    </nav>
+    <main>
+        <nav id="sideNav">
+            <i class="fa fa-times" aria-hidden="true" onclick="closeSideNav()"></i>
+            <div class="head">
+                DASHBOARD
+            </div>
+            <ul>
+                <li><a href=""><img src="images/home.png" alt="home"><span>Over View</span></a></li>
+                <li><a href=""><img src="images/board.png" alt="board"><span>Meal Plan</span></a></li>
+                <li><a href=""><img src="images/clock.png" alt="clock"><span>Measurements</span></a></li>
+                <li><a href=""><img src="images/cart.png" alt="cart"><span>Support</span></a></li>
+                <li><a href="./profile.html"><img src="images/board.png" alt="profile"><span>Profile</span></a></li>
+                <li><a href=""><img src="images/ninja.png" alt="vid"><span>Videos</span></a></li>
+                <li><a href=""><img src="images/trophy.png" alt="trophy"><span>Achievements</span></a></li>
+            </ul>
+            <div class="head">
+                DASHBOARD
+            </div>
+            <ul>
+                <li><a href="./recipe.html"><img src="images/board.png" alt="recipe"><span>Recipes</span></a></li>
+                <li><a href=""><img src="images/clock.png" alt="fit"><span>Fitness</span></a></li>
+                <li><a href=""><img src="images/cart.png" alt="cart"><span>Resources</span></a></li>
+                <li><a href=""><img src="images/ninja.png" alt="about"><span>About</span></a></li>
+                <li><a href=""><img src="images/paste.png" alt="support"><span>Support</span></a></li>
+            </ul>
+        </nav>
+        <hr>
+        <div class="content">
+            <div class="banner">
+                <div class="line1">Delicious Recipes</div>
+                <div class="line2">Explore variety of recipes</div>
+                <div class="line3">
+                    <input type="search" size="30" placeholder="Search recipe ...">
+                    <div class="search-icon">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="our-picks">
+                Our Picks
+                <span>Delicious and easy recipe we chose for you</span>
+            </div>
+            <div class="item-nav">
+                <div class="categories">
+                    <a href="">All</a>
+                    <a href="" class="active">Chinese</a>
+                    <a href="">Continental</a>
+                    <a href="">Indian</a>
+                    <a href="">Thai</a>
+                </div>
+                <div class="categories-options">
+                    <select name="" id="">
+                        <option value="">All</option>
+                        <option value="">Chinese</option>
+                        <option value="">Continental</option>
+                        <option value="">Indian</option>
+                        <option value="">Thai</option>
+                    </select>
+                </div>
+                <div class="searchbar"></div>
+            </div>
+            <div class="recipe-list">
+                <div class="recipe-card">
+                    <div class="card card1">
+                        <div class="card-title">Chinese Breakfast</div>
+                        <nav>Lorem ipsum dolor sit amet consectetur</nav>
+                        <div class="specs">
+                            <div class="first-col">Prep time <br> 1h</div>
+                            <hr>
+                            <div class="second-col">Serves <br> 4</div>
+                            <hr>
+                            <div class="third-col">Calories <br> 251</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="recipe-card">
+                    <div class="card card2">
+                        <div class="card-title">Chinese Breakfast</div>
+                        <nav>Lorem ipsum dolor sit amet consectetur</nav>
+                        <div class="specs">
+                            <div class="first-col">Prep time <br> 1h</div>
+                            <hr>
+                            <div class="second-col">Serves <br> 4</div>
+                            <hr>
+                            <div class="third-col">Calories <br> 251</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="recipe-card">
+                    <div class="card card3">
+                        <div class="card-title">Chinese Breakfast</div>
+                        <nav>Lorem ipsum dolor sit amet consectetur</nav>
+                        <div class="specs">
+                            <div class="first-col">Prep time <br> 1h</div>
+                            <hr>
+                            <div class="second-col">Serves <br> 4</div>
+                            <hr>
+                            <div class="third-col">Calories <br> 251</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="recipe-card">
+                    <div class="card card4">
+                        <div class="card-title">Chinese Breakfast</div>
+                        <nav>Lorem ipsum dolor sit amet consectetur</nav>
+                        <div class="specs">
+                            <div class="first-col">Prep time <br> 1h</div>
+                            <hr>
+                            <div class="second-col">Serves <br> 4</div>
+                            <hr>
+                            <div class="third-col">Calories <br> 251</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="recipe-card">
+                    <div class="card card5">
+                        <div class="card-title">Chinese Breakfast</div>
+                        <nav>Lorem ipsum dolor sit amet consectetur</nav>
+                        <div class="specs">
+                            <div class="first-col">Prep time <br> 1h</div>
+                            <hr>
+                            <div class="second-col">Serves <br> 4</div>
+                            <hr>
+                            <div class="third-col">Calories <br> 251</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="recipe-card">
+                    <div class="card card6">
+                        <div class="card-title">Chinese Breakfast</div>
+                        <nav>Lorem ipsum dolor sit amet consectetur</nav>
+                        <div class="specs">
+                            <div class="first-col">Prep time <br> 1h</div>
+                            <hr>
+                            <div class="second-col">Serves <br> 4</div>
+                            <hr>
+                            <div class="third-col">Calories <br> 251</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <br><br>
+    </main>
+    <div class="copyright">
+        <nav>Copyright &copy; 2020 S . All rights reserved.</nav>
+        <nav><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></nav>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

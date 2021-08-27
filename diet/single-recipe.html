@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+
+            <div class="first">Your Current Plan</div>
+            <div class="second">Weight Loss #3</div>
+            <div class="ham" onclick="sideNav()"><div class="hamburger"></div></div>
+            <div class="profile-image">
+                <img src="images/black.jpg" alt="face" onclick="showDrop()">
+                <div class="online"></div>
+            </div>
+            <div class="drop-profile" id="restrict" onclick="custom()">
+                <div class="blur"></div>
+                <div class="drop-profile-name">Halil Ibrahim Nuroglu</div>
+                <div class="drop-profile-mob">8989898989</div> 
+                <div class="profile-image">
+                    <img src="images/black.jpg" alt="face" onclick="showDrop()">
+                    <div class="online"></div>
+                </div>
+                <a href="./profile.html"><div class="edit-profile" onclick="custom()">Edit Profile</div></a>
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="icons">
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                <i class="fa fa-bell-o" aria-hidden="true"></i>
+                <a href="#" class="log-out"><i class="fa fa-sign-out" aria-hidden="true"></i></a>
+            </div>
+            <div class="profile">
+                <span>AB+</span>
+                <div class="profile-image">
+                    <img src="images/black.jpg" alt="face">
+                    <div class="online"></div>
+                </div>
+                <div class="profile-info">
+                    <div class="profile-name">
+                        <b>Halil Ibrahim Nuroglu</b>
+                    </div>
+                    <div class="mob-num">
+                        Mobile No. : 8989898989
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav id="sideNavResponsive">
+        <nav>Your Plan</nav>
+        <span>Weight Loss #3</span>
+        <div class="head">
+            DASHBOARD
+        </div>
+        <ul>
+            <li><a href=""><img src="images/home.png" alt="home"><span>Over View</span></a></li>
+            <li><a href=""><img src="images/board.png" alt="board"><span>Meal Plan</span></a></li>
+            <li><a href=""><img src="images/clock.png" alt="clock"><span>Measurements</span></a></li>
+            <li><a href=""><img src="images/cart.png" alt="cart"><span>Support</span></a></li>
+            <li><a href="./profile.html"><img src="images/board.png" alt="profile"><span>Profile</span></a></li>
+            <li><a href=""><img src="images/ninja.png" alt="vid"><span>Videos</span></a></li>
+            <li><a href=""><img src="images/trophy.png" alt="trophy"><span>Achievements</span></a></li>
+        </ul>
+        <div class="head">
+            DASHBOARD
+        </div>
+        <ul>
+            <li><a href="./recipe.html"><img src="images/board.png" alt="recipe"><span>Recipes</span></a></li>
+            <li><a href=""><img src="images/clock.png" alt="fit"><span>Fitness</span></a></li>
+            <li><a href=""><img src="images/cart.png" alt="cart"><span>Resources</span></a></li>
+            <li><a href=""><img src="images/ninja.png" alt="about"><span>About</span></a></li>
+            <li><a href=""><img src="images/paste.png" alt="support"><span>Support</span></a></li>
+        </ul>
+    </nav>
+    <main>
+        <nav id="sideNav">
+            <i class="fa fa-times" aria-hidden="true" onclick="closeSideNav()"></i>
+            <div class="head">
+                DASHBOARD
+            </div>
+            <ul>
+                <li><a href=""><img src="images/home.png" alt="home"><span>Over View</span></a></li>
+                <li><a href=""><img src="images/board.png" alt="board"><span>Meal Plan</span></a></li>
+                <li><a href=""><img src="images/clock.png" alt="clock"><span>Measurements</span></a></li>
+                <li><a href=""><img src="images/cart.png" alt="cart"><span>Support</span></a></li>
+                <li><a href="./profile.html"><img src="images/board.png" alt="profile"><span>Profile</span></a></li>
+                <li><a href=""><img src="images/ninja.png" alt="vid"><span>Videos</span></a></li>
+                <li><a href=""><img src="images/trophy.png" alt="trophy"><span>Achievements</span></a></li>
+            </ul>
+            <div class="head">
+                DASHBOARD
+            </div>
+            <ul>
+                <li><a href="./recipe.html"><img src="images/board.png" alt="recipe"><span>Recipes</span></a></li>
+                <li><a href=""><img src="images/clock.png" alt="fit"><span>Fitness</span></a></li>
+                <li><a href=""><img src="images/cart.png" alt="cart"><span>Resources</span></a></li>
+                <li><a href=""><img src="images/ninja.png" alt="about"><span>About</span></a></li>
+                <li><a href=""><img src="images/paste.png" alt="support"><span>Support</span></a></li>
+            </ul>
+        </nav>
+        <hr>
+        <div class="content">
+            <div class="single-recipe-flex">
+                <div class="single-recipe-header">
+                    <small>Chinese</small>
+                    <h1>
+                        <div class="first-line-title">Schezwan</div>
+                        <div class="second-line-title">Chicken Chilli Spicy</div>
+                    </h1>
+                    <div class="review">
+                        <div class="star">
+                            <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                        <div class="review-num">32 reviews</div>
+                    </div>
+                </div>
+                <div class="single-recipe-graphics">
+                    <img src="images/dish.png" alt="dish-image">
+                    <div class="single-recipe-ingredients">
+                        <div class="ingredients-place">
+                            <div class="each-line">
+                                <div class="circle red">1h</div>
+                                <div class="ingredients-text">Prep time</div>
+                            </div>
+                            <div class="each-line">
+                                <div class="circle red" id="calory-value">230</div>
+                                <div class="ingredients-text">Calories</div>
+                            </div>
+                            <div class="title">
+                                Ingredients
+                            </div>
+                            <div class="serves">
+                                <span>Serves</span>
+                                <button>-</button>
+                                <div class="serve-num">1</div>
+                                <button>+</button>
+                            </div>
+                            <div class="process">
+                                <div class="each-line">
+                                    <div class="bullet">
+                                        <i class="fa fa-circle" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="process-text">3 tablespoon Oil, soybean, salad, or cooling</div>
+                                </div>
+                                <div class="each-line">
+                                    <div class="bullet">
+                                        <i class="fa fa-circle light-orange" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="process-text">1&frac12; cups Zucchini, raw</div>
+                                </div>
+                                <div class="each-line">
+                                    <div class="bullet">
+                                        <i class="fa fa-circle" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="process-text">1&frac12; Mushrooms, raw</div>
+                                </div>
+                                <div class="each-line">
+                                    <div class="bullet">
+                                        <i class="fa fa-circle" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="process-text">&frac34; cup Onions, raw</div>
+                                </div>
+                                <div class="each-line">
+                                    <div class="bullet">
+                                        <i class="fa fa-circle" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="process-text">1 clove Garlic, raw</div>
+                                </div>
+                                <div class="each-line">
+                                    <div class="bullet">
+                                        <i class="fa fa-circle orange" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="process-text">2 cups Cheese, cheddar</div>
+                                </div>
+                                <div class="each-line">
+                                    <div class="bullet">
+                                        <i class="fa fa-circle" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="process-text">1 teaspoon Salt, table</div>
+                                </div>
+                                <div class="each-line">
+                                    <div class="bullet">
+                                        <i class="fa fa-circle" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="process-text">&frac14; teaspoon Spices, pepper, black</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single-recipe-method">
+                <div class="title">
+                    <h2>Method</h2>
+                </div>
+                <div class="recipe-method-list">
+                    <div class="recipe-method">
+                        <div class="bullet">
+                            <i class="fa fa-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="method">Lorem ipsum doloru Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, a! ti delectus, voluptatibus expedita aliquid vitae?</div>
+                    </div>
+                    <div class="recipe-method">
+                        <div class="bullet">
+                            <i class="fa fa-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="method">Lorem ipsum doloru Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, a! ti delectus, voluptatibus expedita aliquid vitae?</div>
+                    </div>
+                    <div class="recipe-method">
+                        <div class="bullet">
+                            <i class="fa fa-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="method">Lorem ipsum doloru Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, a! ti delectus, voluptatibus expedita aliquid vitae?</div>
+                    </div>
+                    <div class="recipe-method">
+                        <div class="bullet">
+                            <i class="fa fa-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="method">Lorem ipsum doloru Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, a! ti delectus, voluptatibus expedita aliquid vitae?</div>
+                    </div>
+                    <div class="recipe-method">
+                        <div class="bullet">
+                            <i class="fa fa-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="method">Lorem ipsum doloru Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, a! ti delectus, voluptatibus expedita aliquid vitae?</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <br><br>
+    </main>
+    <div class="copyright">
+        <nav>Copyright &copy; 2020 S . All rights reserved.</nav>
+        <nav><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></nav>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
